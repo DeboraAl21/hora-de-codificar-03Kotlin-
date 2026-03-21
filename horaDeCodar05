@@ -1,0 +1,32 @@
+fun main() {
+
+//5 - Faça um algoritmo que calcule e escreva a média
+// aritmética dos dois números inteiros informados pelo
+// usuário e todos os números inteiros entre eles. Considere
+// que o primeiro sempre será menor que o segundo.
+
+    var contador = 0
+    var soma = 0
+
+    println("Escreva um número: ")
+    var num1 = readln().toInt()
+
+    println("Escreva outro número (maior que o primeiro): ")
+    var num2 = readln().toInt()
+
+    // Validação: o segundo número precisa ser maior que o primeiro
+    while (num2 <= num1) {
+        println("Número inválido! O segundo número deve ser maior que o primeiro.")
+        println("Digite novamente o segundo número:")
+        num2 = readln().toInt()
+    }
+
+    // Soma de todos os números entre num1 e num2 (inclusive)
+    for (i in num1..num2) {
+        soma += i
+        contador++
+    }
+
+    val media = soma.toDouble() / contador
+    println("A média dos valores de $num1 a $num2 é: $media")
+}
