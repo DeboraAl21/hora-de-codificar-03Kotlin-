@@ -1,0 +1,27 @@
+fun main() {
+//2 - Escreva um algoritmo para ler 2 valores informados pelo usuário e
+    // enquanto o segundo valor informado for igual ou menor que ZERO,
+    // deve ser lido um novo valor, mas para a mesma variável. Ou seja,
+    // para o segundo valor não pode ser aceito o valor zero nem um valor negativo.
+
+    //O seu programa deve imprimir o resultado da divisão do primeiro valor
+    // lido pelo segundo valor e exibir o resultado ao usuário.
+
+    var num1: Double = 0
+    var num2: Double = 0
+    println("Digite um número: ")
+    num1 = readln().toDouble()
+
+    println("Digite outro número: ")
+    num2 = readln().toDouble()
+
+    //enquanto "num2" for menor ou igual a 0 irá continuar em um loop infinito até que o número seja válido.
+
+   while (num2 <= 0){
+       println("Inválido! O número deve ser maior que zero.")
+       println("Digite outro número: ")
+       num2 = readln().toDouble()
+   }
+    println("A divisão dos dois números: $num1 / $num2 = ${num1 / num2}")
+}
+
