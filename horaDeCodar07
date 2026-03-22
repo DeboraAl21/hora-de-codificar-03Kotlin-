@@ -1,0 +1,32 @@
+fun main() {
+
+    //7 - Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
+    //Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário.
+
+   
+
+        // Lista para armazenar as 6 notas
+        val notas = mutableListOf<Double>()
+
+        // Lê 6 notas válidas entre 0 e 10
+        for (i in 1..6) {
+            var nota: Double
+
+            do {
+                print("Digite a nota $i (0 a 10): ")
+                nota = readln().toDouble()
+
+                if (nota !in 0.0..10.0) {
+                    println( "Nota inválida! Digite novamente.")
+                }
+            } while (nota !in 0.0..10.0)
+
+            notas.add(nota)
+        }
+
+        // Calcula a média
+        val media = notas.average()
+
+        // Exibe o resultado
+        println("A média do aluno é: $media")
+    }
