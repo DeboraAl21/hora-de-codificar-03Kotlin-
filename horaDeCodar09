@@ -1,0 +1,25 @@
+fun main() {
+
+    //9 - Escreva um algoritmo para imprimir os
+    // 10 primeiros números inteiros maiores que 100.
+
+
+    for (i in 101..111) {
+
+        println(i)
+    }
+}
+        
+/* ou:
+        var i = 101   // começa no primeiro maior que 100
+        var count = 0 // conta 10 números
+
+        while (count < 10) {
+            println(i)
+            i++
+            count++
+        }
+
+    }
+    */
+         
