@@ -1,0 +1,20 @@
+fun main() {
+
+    //11 - Escreva um programa para imprimir todas
+    // as tabuadas de 1 a N. N será informado pelo usuário.
+
+
+    println("Digite um número: ")
+    var N = readln().toInt()
+    // var i: Int = 0
+
+    if (N > 0) {
+        for (i in 1..N) {
+
+            println("$i * $N = ${i * N}")
+        }
+    } else {
+        println("Tente um valor maior que ZERO: ")
+
+    }
+}
